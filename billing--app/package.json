@@ -1,0 +1,38 @@
+{
+  "name": "heroku_billing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "bluebird": "^3.7.2",
+    "body-parser": "^1.19.0",
+    "chai": "^4.2.0",
+    "child_process": "^1.0.2",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.7-alpha.3",
+    "formidable": "^1.2.2",
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security",
+    "js-alert": "^1.0.4",
+    "mongodb": "^3.5.5",
+    "mongodb-autoincrement": "^1.0.1",
+    "mongoose": "^5.9.5",
+    "mongoose-autoincrement-id": "^1.0.8",
+    "multer": "^1.4.2",
+    "node-rsa": "^1.0.8",
+    "nodemon": "^2.0.3",
+    "pg": "^8.2.1",
+    "request-promise": "^4.2.5",
+    "socket.io": "^2.3.0",
+    "supertest": "^4.0.2",
+    "sweetalert": "^2.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^7.1.2"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "chiran",
+  "license": "ISC"
+}
