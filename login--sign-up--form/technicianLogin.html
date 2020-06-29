@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css"href="technicianLogin.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+	<!--<div class="center">-->
+		<!----<img src="login.png" class="login">-->
+		<!---<h4 class="text-center font-weight-bold">Login</h4>-->
+    <section class="container-fluid bg">
+        <section class="row justify-content-center">
+            <section class="col-12 col-sm-6 col-md-3">
+		    <form method="post" action="tech-patient.html" class="form-container w-100 p-3" id="submitForm">
+		
+                <h4 class="text-center font-weight-bold">Login</h4>
+                <div class="form-group">
+                
+                
+                    <label for="exampleInputUsername">Username</label>
+                    <input type="text" class="form-control" name="Username" id="exampleInputUsername" aria-describedby="Username" placeholder="Enter username">
+                    <small id="Username" class="form-text text-muted"></small>
+               
+
+                </div>
+            
+			
+            <div class="form-group">
+			
+                
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control"name="Password" id="exampleInputPassword1" placeholder="Enter password">
+                <small id="Password" class="form-text text-muted"></small>
+            </div>
+
+           
+
+
+			<div class="pass">
+                <label for="inputState">Role</label>
+                <select name="Role" id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Technician</option>
+                    <option>Billing clerk</option>
+                </select>
+                <small id="Password" class="form-text text-muted"></small>
+            </div>
+            
+
+            <button type="submit" class="btn btn-primary btn-block mb-5" >Submit</button>
+			
+        
+		</form>
+        </section>
+    </section>
+</section>
+
+
+<script src="jquery.js"></script>
+<script src="continue.js"></script>
+
+
+
+</body>
+</html>
