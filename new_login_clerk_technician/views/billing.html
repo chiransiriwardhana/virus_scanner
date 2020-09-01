@@ -1,0 +1,287 @@
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hospital Billing System</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="billing.css">
+
+</head>
+
+<body>
+    <div class="outerContainer">
+        <div class="container">
+            <div class="header">
+                <div class="image-container">
+                    <img src="new_profile.jpg " id="icon">
+                </div>
+
+                <label class="name">Kamal weerawansha</label>
+                <form action="/logout" method="post">
+                    <input type="submit" value="Logout" id="logout_btn">
+                </form>
+            </div>
+            <div class="info">
+                <form method="post" autocomplete="off" action="/api/activities" id="target">
+                    <table class="style1" width="700px">
+                        <tr>
+                            <td>
+
+
+                                <!----  <table width="700px" cellpadding="6px" class="table_1" >
+            <tr >
+                <td>
+                    <font color="black" style="font-family:Montserrat ,sans-serif;  font-size:15px;">Firstname :</font>
+                </td>
+                <td>
+                    <input type="text" id="first_name" name="firstName" placeholder="First Name"  class="tbox_left" spellcheck="false">
+            </td>
+            </tr>
+            
+            <tr>
+                <td><font color="black" style="font-family:Montserrat ,sans-serif;  font-size:15px;">Surname :</font></td>
+                <td>
+                    <input type="text" id="surname_" name="surname" placeholder="Surname" class="tbox_left" spellcheck="false">
+                </td>
+            </tr>
+            
+            <tr>
+                <td><font color="black" style="font-family:Montserrat ,sans-serif;  font-size:15px;">Date Of Birth :</font></td>
+                <td>
+                    <input type="Date" id="date_of_birth" name="dateOfBirth" placeholder="Date Of Birth" class="tbox_left"spellcheck="false">
+                </td>
+            </tr>
+
+
+            ==============================<tr>
+                <td><font color="black" style="font-family:Montserrat ,sans-serif;  font-size:15px;">Gender :</font></td>
+
+                <td>
+                    <input type="radio" name="gender" value="male" style="background-color: white;"> <label for="gender" style="color:rgb(153, 156, 158); font-family:Montserrat,sans-serif; font-size:12px;">Male </label>
+                    <input type="radio" name="gender" value="female" style="background-color: white;"><label for="gender" style="color:rgb(153, 156, 158);font-family:Montserrat,sans-serif; font-size:12px;">Female</label>
+                </td>
+            </tr>=========================
+
+
+            <tr>
+                <td> <font color="black" style="font-family:Montserrat ,sans-serif;  font-size:15px;">Telephone :</font></td>
+                <td>
+                    <input type="text" id="telephone_"  name="telephone" placeholder="Telephone" class="tbox_left" spellcheck="false">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td><font color="black" style="font-family:Montserrat ,sans-serif;  font-size:15px;">E-mail :</font></td>
+                <td>
+                    <input type="text" id="e_mail_" name="e_mail" placeholder="E-mail" class="tbox_left" spellcheck="false">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td> <font color="black" style="font-family:Montserrat ,sans-serif;  font-size:15px;">Address :</font></td>
+                <td>
+                    <input type="text" id="address_" name="address" class="addressText" placeholder="Address" spellcheck="false">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td><font color="black" style="font-family:Montserrat ,sans-serif;  font-size:15px;">City :</font></td>
+                <td>
+                    <input type="text" id="city_" name="city" placeholder="City" class="tbox_left" spellcheck="false">
+                </td>
+            </tr>
+
+
+
+            =============================<tr>
+                <td style="width: 250px"></td><td align="left" style="width: 400px"><input type="reset" name= "reset" value="Reset" class='btnNew'></td>
+            </tr>============================
+
+        </table>  -->
+                                <table width="700px" cellpadding="10px" class="table_1">
+
+                                    <tr>
+                                        <td>
+                                            <font color="black"
+                                                style="font-family:Montserrat ,sans-serif;  font-size:15px;">Paid date :
+                                            </font>
+                                        </td>
+                                        <td>
+                                            <input type="Date" id="appointment_on" name="appointmentOn" class="tbox"
+                                                spellcheck="false">
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td>
+                                            <font color="black"
+                                                style="font-family:Montserrat ,sans-serif;  font-size:15px;">Appointment
+                                                No :</font>
+                                        </td>
+                                        <td>
+                                            <input type="text" id="appointment_no" name="appointmentNo" class="tbox"
+                                                spellcheck="false">
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td>
+                                            <font color="black"
+                                                style="font-family:Montserrat ,sans-serif;  font-size:15px;">Room No :
+                                            </font>
+                                        </td>
+                                        <td>
+                                            <input type="text" id="room_no" name="roomNo" class="tbox"
+                                                spellcheck="false">
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <font color="black"
+                                                style="font-family:Montserrat ,sans-serif;  font-size:15px;">Consultent
+                                                :</font>
+                                        </td>
+                                        <td>
+                                            <input type="text" id="consultent_" name="consultent" class="tbox"
+                                                spellcheck="false">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td>
+                                <table width="700px " cellpadding="10px" class="table_2">
+
+                                    <!--<tr>
+                <td><font color="black" style="font-family:Montserrat ,sans-serif;  font-size:15px;">Paid date :</font></td>
+                <td>
+                    <input type="Date" id="appointment_on" name="appointmentOn"  class="tbox" spellcheck="false">
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td> <font color="black" style="font-family:Montserrat ,sans-serif;  font-size:15px;">Appointment No :</font></td>
+                <td>
+                    <input type="text" id="appointment_no" name="appointmentNo" class="tbox" spellcheck="false">
+                </td>
+            </tr>
+
+
+
+            <tr>
+                <td><font color="black" style="font-family:Montserrat ,sans-serif;  font-size:15px;">Room No :</font></td>
+                <td>
+                    <input type="text" id="room_no" name="roomNo" class="tbox" spellcheck="false">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td><font color="black" style="font-family:Montserrat ,sans-serif;  font-size:15px;">Consultent :</font></td>
+                <td>
+                    <input type="text" id="consultent_" name="consultent" class="tbox" spellcheck="false">
+                </td>
+            </tr>-->
+
+
+                                    <tr>
+                                        <td>
+                                            <font color="black"
+                                                style="font-family:Montserrat ,sans-serif;  font-size:15px;">Cashier :
+                                            </font>
+                                        </td>
+                                        <td>
+                                            <input type="text" id="cashier_" name="cashier" class="tbox"
+                                                spellcheck="false">
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <font color="black"
+                                                style="font-family:Montserrat ,sans-serif;  font-size:15px;">Hospital
+                                                Charge Rs :</font>
+                                        </td>
+                                        <td>
+                                            <input type="text" id="hospital_fee" name="hospitalFee" class="tbox"
+                                                value="" spellcheck="false">
+
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <font color="black"
+                                                style="font-family:Montserrat ,sans-serif;  font-size:15px;">Consultant
+                                                Charge Rs :</font>
+                                        </td>
+                                        <td>
+                                            <input type="text" id="consultent_fee" name="consultantFee" class="tbox"
+                                                spellcheck="false">
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>
+                                            <input type="button" onclick="calculateFinalPayment()" value="Total"
+                                                class="btnAdd">
+                                        </td>
+                                        <td>
+                                            <font color="black"
+                                                style="font-family:Montserrat ,sans-serif;  font-size:15px;">Total Rs
+                                                :<label id='display'></label></font>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <font color="black"
+                                                style="font-family:Montserrat ,sans-serif;  font-size:15px;">Final
+                                                Payment :</font>
+                                        </td>
+                                        <td>
+                                            <input type="text" id="c_" name="finalPayment" class="tbox"
+                                                spellcheck="false">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td></td>
+                                        <td><input type="submit" value="Submit" id='add' name="Add" class='btnNew' />
+                                        </td>
+                                    </tr>
+
+                                </table>
+                            </td>
+
+
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="submit.js"></script>
+    <script src="bilingFunction.js"></script>
+
+
+</body>
+
+</html>
